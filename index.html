@@ -1,23 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <title>CyberPatriot Audit Utility</title>
 <link rel="icon" href="/cyberpatriot_icon.png">
-<div style="font-family:Arial, sans-serif; line-height:1.6; max-width: 1100px; margin: 40px auto;">
+
 <style>
   a {
     font-family: Consolas, "Courier New", monospace;
     font-size: 1.00em;
   }
 </style>
+
 <style>
   a {
-	color:#0000ee;
-	margin-bottom:0.3em;
+    color:#0000ee;
+    margin-bottom:0.3em;
   }
 
   a:hover {
     color: #004c99;
-	margin-bottom:0.3em;
+    margin-bottom:0.3em;
   }
 </style>
+
 <style>
   hr {
     margin: 40px 0;
@@ -26,6 +31,7 @@
     background: #ddd;
   }
 </style>
+
 <style>
   body {
     background: #eef2f6;
@@ -37,29 +43,40 @@
     border-radius: 8px;
   }
 </style>
+
 <style>
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 </style>
+
 <style>
 .footer {
   text-align: center;
   font-size: 12px;
-  color: #888;       /* light grey so it’s subtle */
-  margin-top: 40px;  /* space from main content */
+  color: #888;
+  margin-top: 40px;
 }
 </style>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div style="font-family:Arial, sans-serif; line-height:1.6; max-width: 1100px; margin: 40px auto;">
+
 <h1 style="color:#2c3e50; margin-bottom:0.3em;text-align: center"> How To Use CyberPatriot Audit and Defense Utility Version 11</h1>
 <hr style="margin:1.5em 0;">
+
 <h2 style="color:#2c3e50; margin-bottom:0.3em;">License</h2>
 <ul>
 <li style="color: red; font-weight: bold;">This software is distributed with NO LICENSE OR WARRANTY WHATSOEVER!!!</li>
 <li>Please use with care and responsibility.</li>
 <li>Please use in accordance to the terms of use of Cyberpatriot images.</li>
 </ul>
+
 <hr style="margin:1.5em 0;">
 
 <h2 style="color:#2c3e50; margin-bottom:0.3em;">File Download Links </h2>
@@ -68,7 +85,7 @@
 <li>
 <a href="#" id="downloadTar">Main Archive File Download</a>
 </li>
-	
+
 <script>
 document.getElementById("downloadTar").addEventListener("click", async function(e) {
   e.preventDefault();
@@ -90,9 +107,8 @@ document.getElementById("downloadTar").addEventListener("click", async function(
 <li>
 <a href="#" id="downloadSh">Installation Software</a>
 </li>
-	
-<script>
 
+<script>
 document.getElementById("downloadSh").addEventListener("click", async function(e) {
   e.preventDefault();
 
@@ -108,85 +124,91 @@ document.getElementById("downloadSh").addEventListener("click", async function(e
   a.click();
   a.remove();
 });
-
 </script>
-</ul>
 
+</ul>
 
 <hr style="margin:1.5em 0;">
 
 <h2 style="color:#2c3e50; margin-bottom:0.3em;">Download Instructions </h2>
 <ol style="margin-top:0;">
-  <li>Download both files above.</li>
-  <li>Open your terminal (if it's not already open) and enter <code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">sudo -v</code></li>
-  <li>Enter your password and authenticate.</li>
-  <li>Use this code to activate the installer:</li>
-  <code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">cd ~/Downloads && chmod u+x installer.sh && ./installer.sh && cd</code></li>
-  <li>You should see a message that says that installation has been completed successfully, the installer software will remove itself automatically after a successful installation.</li>
+<li>Download both files above.</li>
+<li>Open your terminal (if it's not already open) and enter <code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">sudo -v</code></li>
+<li>Enter your password and authenticate.</li>
+<li>Use this code to activate the installer:</li>
+<li><code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">cd ~/Downloads && chmod u+x installer.sh && ./installer.sh && cd</code></li>
+<li>You should see a message that says that installation has been completed successfully, the installer software will remove itself automatically after a successful installation.</li>
 </ol>
 
 <hr style="margin:1.5em 0;">
 
 <h2 style="color:#34495e;">Available Scripts</h2>
 <ul>
-  <li><strong>cp_auditor11.sh (cyberaudit)</strong> - resolves most security issues.</li>
-  <li><strong>faillock.sh (faillock)</strong> - configures a lockout policy.</li>
-  <li>Use cyberaudit to resolve most security issues.</li>
-  <li>After you are done and have finished the image to the best of your ability, use faillock to configure a lockout policy.</li>
-  <li>This will gain you some points, but it will also lock you out of your account and break authentication.</li>
-  <li>Double-click a file to run it.</li>
+<li><strong>cp_auditor11.sh (cyberaudit)</strong> - resolves most security issues.</li>
+<li><strong>faillock.sh (faillock)</strong> - configures a lockout policy.</li>
+<li>Use cyberaudit to resolve most security issues.</li>
+<li>After you are done and have finished the image to the best of your ability, use faillock to configure a lockout policy.</li>
+<li>This will gain you some points, but it will also lock you out of your account and break authentication.</li>
+<li>Double-click a file to run it.</li>
 </ul>
 
 <hr style="margin:1.5em 0;">
 
 <h2 style="color:#2c3e50; margin-bottom:0.3em;">Instructions of Use</h2>
 <ol>
-  <li>Ensure your directory is <code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">~/Desktop</code></li>
-  <li>If not, run <code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">cd ~/Desktop</code></li>
-  <li>Run <strong>cyberaudit</strong> first.</li>
-  <li>
-    Double-click <strong>cyberaudit</strong>, if it does not open, or returns an error, run this code to launch manually:
-    <br>
-    <code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">sudo /opt/cpadu/cp_auditor11.sh</code>
-  </li>
-  <li>You should see the following in your terminal:</li>
+<li>Ensure your directory is <code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">~/Desktop</code></li>
+<li>If not, run <code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">cd ~/Desktop</code></li>
+<li>Run <strong>cyberaudit</strong> first.</li>
+<li>
+Double-click <strong>cyberaudit</strong>, if it does not open, or returns an error, run this code to launch manually:
+<br>
+<code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">sudo /opt/cpadu/cp_auditor11.sh</code>
+</li>
+<li>You should see the following in your terminal:</li>
 </ol>
 
 <div style="background:#eef6ff; border-left:4px solid #3498db; padding:10px; margin:1em 0;">
-  <span style="font-weight: bold; font-family: 'DejaVu Sans Mono', 'Cantarell', monospace; background-color: blue; color: white;">
-  ====Cyberpatriot Audit and Defense Utility====
-  </span>
-  <pre style="margin-top:8px; font-family: 'DejaVu Sans Mono', 'Cantarell', monospace;">
+<span style="font-weight: bold; font-family: 'DejaVu Sans Mono', 'Cantarell', monospace; background-color: blue; color: white;">
+====Cyberpatriot Audit and Defense Utility====
+</span>
+<pre style="margin-top:8px; font-family: 'DejaVu Sans Mono', 'Cantarell', monospace;">
 Look for security issues.                --(1)
 Look for and repair security issues.     --(2)
 View more information.                   --(3)
 Advanced options.                        --(4)
 Quit the program.                        --(5)
 
-Select an option to continue: 
-  </pre>
+Select an option to continue:
+</pre>
 </div>
 
 <ol start="4">
-  <li>
-    Choose the option you need:<br>
-    <ul>
-      <li><strong>1</strong> — Quick security check</li>
-      <li><strong>2</strong> — Full system check and repair (recommended if unsure)</li>
-      <li><strong>3</strong> — More information</li>
-	  <li><strong>4</strong> — Provides help with forensics quesitons and tasks covered in the readme file</li>
-    </ul>
-  </li>
-  <li>Follow the prompts shown in the terminal.</li>
-  <li>Use <strong>y</strong> for yes and <strong>n</strong> for no.</li>
-  <li>After running cyberaudit, run faillock if you wish to make a last-ditch effort to gain some points.
-    <li>
-    Double-click <strong>faillock</strong>, if it does not open, or returns an error, run this code to launch manually:
-    <br>
-    <code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">sudo /opt/cpadu/faillock.sh</code>
-    <li>You will be asked to provide confirmation that you wish to run the program, enter <strong>y</strong> for yes and <strong>n</strong> for no.</li>
-  </li>
-  <li>If you have any questions, feel free to ask.</li>
+<li>
+Choose the option you need:<br>
+<ul>
+<li><strong>1</strong> — Quick security check</li>
+<li><strong>2</strong> — Full system check and repair (recommended if unsure)</li>
+<li><strong>3</strong> — More information</li>
+<li><strong>4</strong> — Provides help with forensics quesitons and tasks covered in the readme file</li>
+</ul>
+</li>
+
+<li>Follow the prompts shown in the terminal.</li>
+<li>Use <strong>y</strong> for yes and <strong>n</strong> for no.</li>
+
+<li>
+After running cyberaudit, run faillock if you wish to make a last-ditch effort to gain some points.
+<ul>
+<li>
+Double-click <strong>faillock</strong>, if it does not open, or returns an error, run this code to launch manually:
+<br>
+<code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">sudo /opt/cpadu/faillock.sh</code>
+</li>
+<li>You will be asked to provide confirmation that you wish to run the program, enter <strong>y</strong> for yes and <strong>n</strong> for no.</li>
+</ul>
+</li>
+
+<li>If you have any questions, feel free to ask.</li>
 </ol>
 
 <hr style="margin:1.5em 0;">
@@ -209,17 +231,18 @@ sudo pam-auth-update
 
 <h2 style="color:#34495e;">Additional Information</h2>
 
-<p>If you wish to view or audit the source code, please go to the <code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">/opt/cpadu</code> directory on your computer.<p>
+<p>If you wish to view or audit the source code, please go to the <code style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">/opt/cpadu</code> directory on your computer.</p>
 <p>More information can be found by selecting the <em>More Info</em> option inside <strong>cyberaudit</strong>.</p>
-<p>If you wish to verify that the files have not been corrupted after download, verify the MD5 sums below:<p>
+<p>If you wish to verify that the files have not been corrupted after download, verify the MD5 sums below:</p>
+
 <pre style="background:#f4f4f4; padding:4px 6px; display:inline-block; margin-top:4px;">
 4e7c51bec3aa61424b0dd88f2a9ac9b3  cpadu.tar.gz
 45d8883b9b5ea0a4de961e7f9ab441c1  installer.sh
 </pre>
+
 <p>If you encounter any problems, please message me in teams or email me at this address: <code>29miaoet@lrsd.net</code></p>
 
-<footer>
-    <p>Note: This page has been created and is maintained by Ethan Miao</p>
-</footer>
-
-
+</div>
+<footer>Note: This page was created and is maintained by Ethan Miao.</footer>
+</body>
+</html>
